@@ -3,39 +3,37 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>template-web</title>
+  <title>clone-linktree</title>
+  <link rel="icon" type="image/png" href="favicon.ico"/>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <h1>
-      <a href="https://github.com/dudushy/template-web" target="_blank">template-web</a>
-    </h1>
+    <img id="share-icon" src="assets/icons/ellipsis-horizontal.svg" onclick="alert('OUT OF ORDER')">
+
+    <img id="profile-img" src="assets/imgs/theyanvictor.jfif">
+    <br>
+    <span id="profile-name">
+      @theyanvictor
+    </span>
+    <p id="profile-bio">
+      Ah... não tem muita coisa, mas se quiser me seguir e ver 😁
+    </p>
   </header>
-  <hr>
+
+  <br>
 
   <div id="content">
-    <h1>Hello World!</h1>
-
-    <button style="background-color: var(--primary)">primary</button>
-    <button style="background-color: var(--secondary)">secondary</button>
-    <button style="background-color: var(--tertiary)">tertiary</button>
-    <button style="background-color: var(--success)">success</button>
-    <button style="background-color: var(--warning)">warning</button>
-    <button style="background-color: var(--danger)">danger</button>
-    <button style="background-color: var(--dark)">dark</button>
-    <button style="background-color: var(--medium)">medium</button>
-    <button style="background-color: var(--light)">light</button>
+    <a class="fake-button" href="https://www.linkedin.com/in/The-yan-victor/" target="_blank"><button>Linkedin</button></a>
+    <a class="fake-button" href="http://github.com/TheYanVictor" target="_blank"><button>GitHub</button></a>
+    <a class="fake-button" href="http://instagram.com/yanvrm" target="_blank"><button>Instagram</button></a>
   </div>
 
-  <hr>
   <footer>
-    <h2>
-      Made with <span id="heart">&#10084;</span>
-      <br>
-      by <a href="https://github.com/dudushy" target="_blank">dudushy</a>
-    </h2>
+    <a id="logo-a" href="https://github.com/dudushy/clone-linktree" target="_blank">
+      <img id="logo-img" src="assets/imgs/githublogo.svg">
+    </a>
   </footer>
 
   <script type="text/javascript" src="script.js"></script>
