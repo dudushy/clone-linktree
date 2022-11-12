@@ -1,29 +1,87 @@
 :root {
-  --text: #ffffff;
-  --wall: #000000;
+  --linktree-text-white: #f9f9f9;
+  --linktree-text-gray: #9e9e9e;
+  --linktree-text-black: #000000;
+  --linktree-background-white: #ffffff;
+  --linktree-background-gray: #888888;
+}
 
-  --primary: #3880ff;
-  --secondary: #3dc2ff;
-  --tertiary: #5260ff;
-  --success: #2dd36f;
-  --warning: #ffc409;
-  --danger: #eb445a;
-  --dark: #222428;
-  --medium: #92949c;
-  --light: #f4f5f8;
+@font-face {
+  font-family: linktree-font;
+  src: url(assets/fonts/NotoSans-SemiCondensed.ttf);
 }
 
 body {
-  color: var(--text);
-  background-color: var(--wall);
+  color: var(--linktree-text-white);
+  background-color: var(--linktree-background-gray);
   text-align: center;
-  font-family: monospace;
+  font-family: linktree-font;
+  margin-inline: 3%;
+  overflow: visible;
 }
 
-a {
-  color: var(--tertiary);
+header {
+  display: block;
+  margin-top: 13%;
 }
 
-span#heart {
-  color: var(--danger);
+footer {
+  display: block;
+  margin-top: 20%;
+}
+
+#profile-img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+#profile-name {
+  font-size: 3.6vw;
+  font-weight: bolder;
+}
+
+#profile-bio {
+  font-size: 3vw;
+}
+
+#content {
+  display: grid;
+}
+
+button {
+  font-size: 2.8vw;
+  font-weight: bold;
+  color: var(--linktree-text-gray);
+  background-color: var(--linktree-background-white);
+  padding: 3%;
+  padding-block: 4%;
+  margin-block: 1.5%;
+  border: 2px solid var(--linktree-background-white);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  color: var(--linktree-text-white);
+  background-color: var(--linktree-background-gray);
+}
+
+#logo-img {
+  width: 30%;
+}
+
+.fake-button {
+  width: 100%;
+  margin-inline: 0;
+}
+
+#share-icon {
+  position: absolute;
+  top: 3%;
+  left: 86%;
+  width: 4.5%;
+  padding: 2%;
+  background: var(--linktree-text-white);
+  border-radius: 50%;
+  cursor: pointer;
 }
